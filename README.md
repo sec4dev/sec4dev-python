@@ -2,6 +2,10 @@
 
 Python client for the [Sec4Dev Security Checks API](https://api.sec4.dev): disposable email detection and IP classification.
 
+## Documentation
+
+Full API documentation: [https://docs.sec4.dev/](https://docs.sec4.dev/)
+
 ## Install
 
 ```bash
@@ -41,3 +45,4 @@ except RateLimitError as e:
 - `timeout` — Request timeout in ms (default: 30000)
 - `retries` — Retry attempts (default: 3)
 - `retry_delay` — Base retry delay in ms (default: 1000)
+- `on_rate_limit` — Optional callback for rate limit updates after each request
